@@ -19,7 +19,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF', '#FF1943'
 export default function DonutChartComponent() {
   return (
     // ResponsiveContainer makes the chart adapt to its parent size
-    <ResponsiveContainer width="100%" height={350}> {/* Height adjusted for legend */}
+    <ResponsiveContainer width="100%" height={350}>
       <PieChart>
         <Pie
           data={data}
