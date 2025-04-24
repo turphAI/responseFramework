@@ -51,29 +51,6 @@ export default function Home() {
               <p>{formatIdToLabel("preamble-wrapper")}</p>
             </TooltipContent>
           </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <div id="postable-wrapper" className="px-4 pb-2 pt-2 hover:bg-hover-green transition-colors duration-200 ease-in-out">
-                <p className="text-sm text-muted-foreground">Postable content will go here...</p> 
-              </div>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{formatIdToLabel("postable-wrapper")}</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <div id="actions-wrapper" className="px-4 pb-4 pt-2 hover:bg-hover-green transition-colors duration-200 ease-in-out rounded-b-lg">
-                <p className="text-sm text-muted-foreground">Actions will go here...</p>
-              </div>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{formatIdToLabel("actions-wrapper")}</p>
-            </TooltipContent>
-          </Tooltip>
-
           <div id="answers-wrapper" className="p-4">
             <Tabs defaultValue="typo" className="w-full">
               <TabsList className="grid w-full grid-cols-4">
@@ -170,6 +147,29 @@ export default function Home() {
 
             </Tabs>
           </div>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div id="postable-wrapper" className="px-4 pb-2 pt-2 hover:bg-hover-green transition-colors duration-200 ease-in-out">
+                <p className="text-sm text-muted-foreground">Postable content will go here...</p> 
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{formatIdToLabel("postable-wrapper")}</p>
+            </TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div id="actions-wrapper" className="px-4 pb-4 pt-2 hover:bg-hover-green transition-colors duration-200 ease-in-out rounded-b-lg">
+                <p className="text-sm text-muted-foreground">Actions will go here...</p>
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{formatIdToLabel("actions-wrapper")}</p>
+            </TooltipContent>
+          </Tooltip>
+
         </Card>
       </TooltipProvider>
     </main>
