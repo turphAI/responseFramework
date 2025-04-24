@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import FaUtterance from "@/components/FaUtterance";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -15,14 +14,6 @@ export default function Home() {
     const parts = id.split('-');
     return parts[0].charAt(0).toUpperCase() + parts[0].slice(1) + ' section';
   };
-
-  const sectionIds = [
-    "utterance-wrapper",
-    "preamble-wrapper",
-    "answers-wrapper",
-    "postable-wrapper",
-    "actions-wrapper",
-  ];
 
   return (
     <main className="container mx-auto px-4 py-8">
@@ -69,7 +60,7 @@ export default function Home() {
                     <p className="text-sm">Quicken® recognizes cash transactions in a Fidelity account, as it would in a checking account, when you follow these steps:</p>
                     <ol className="list-decimal list-inside space-y-1 pl-4 text-sm">
                       <li>After a successful download of your History data into Quicken, choose Tools, then Accounts List from the Main Menu.</li>
-                      <li>Select the investment account to which you'd like to add a linked checking account, then choose the Edit button. On the General Information tab on the Account Details window, choose Yes to "Show cash in a checking account." Quicken will prompt you to back up your data file.</li>
+                      <li>Select the investment account to which you&apos;d like to add a linked checking account, then choose the Edit button. On the General Information tab on the Account Details window, choose Yes to &quot;Show cash in a checking account.&quot; Quicken will prompt you to back up your data file.</li>
                     </ol>
                   </CardContent>
                 </Card>
